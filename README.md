@@ -37,6 +37,7 @@ A interface a ser implementada (fornecida quase pronta) possui a interface e os 
     #define LIST_LEN 5
     lv_obj_t * label_list[LIST_LEN];
     ```
+    
 Cada valor analógico exibido na lista deve ser associado a uma cor, como ilustrado no diagrama e seguindo a escala de cores a seguir:
 
 ![](doc2/escalas.svg){width=60}
@@ -123,7 +124,7 @@ Vocês devem gravar um vídeo do firmware funcionando ao submeterem o código.
 
 :triangular_flag_on_post: **Ao finalizar a entrega preencher o formulário (uma única vez!)**
 
-TODO: Adcionar FORMS
+https://docs.google.com/forms/d/e/1FAIpQLSdTsczFvHSfC040AoKjKUI0w3BMVYC38oVqaGtF4cUUIN2Mlg/viewform?usp=sf_link
 
 ### C
 
