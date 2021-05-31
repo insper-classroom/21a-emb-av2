@@ -15,7 +15,7 @@ Usem como base o código disponível neste repositório.
 
 A ideia é que vocês desenvolvam um data logger, esse data logger será um equipamento que **a cada 4 segundos** coleta um novo valor analógico (potenciômetro) o atribui um TimeStamp (RTC) e o exibe no LCD em formato de lista.
 
-**TODO: ADICIONAR VÍDEO DE COMO TEM QUE FICAR**
+- Video da entrega C: https://youtu.be/8d7n7OFVNqI
 
 ### Detalhes da interface
 
