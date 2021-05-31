@@ -10,8 +10,14 @@ class SerialControllerInterface:
         self.ser = serial.Serial(port, baudrate=baudrate)
         self.c1 = [b'0', b'0', b'1']
         self.c0 = [b'0', b'1', b'0']
+    
+    
+    def debug(self):
+        while(True):
+            print(self.ser.read())
+        
+        
     def update(self):
-
         s = 0
         while(True): 
             print("Aperte a tecla C para enviar um clear no alarme")
@@ -54,5 +60,10 @@ if __name__ == '__main__':
     print("Connection to {} with {})".format(args.serial_port, args.baudrate))
     maquininha = SerialControllerInterface(args.serial_port, args.baudrate)
 
+    # now threading1 runs regardless of user input
+    threading1 = threading.Thread(target=maquininha.debug)
+    threading1.daemon = True
+    threading1.start()
+    
     while True:
         maquininha.update()
